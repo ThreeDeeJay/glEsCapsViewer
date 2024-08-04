@@ -8,14 +8,16 @@ buildscript {
         classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
-android {
-    lintOptions {
-      checkReleaseBuilds false
-      abortOnError false
-    }
 
 allprojects {
     repositories {
         google()
+    }
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 }
